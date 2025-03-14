@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" >
+        <a href="/main.html" class="logo">IMAM MOHAMMED ELIMAM AHAMED</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="/main.html#home" >Home</a>
+            <a href="/main.html#about">About</a>
+            <a href="/main.html#skills">Skills</a>
+            <a href="/main.html#project"class="active">Projects</a>
+        </nav>
+    </header>
+
+    <!-- Project Title -->
+    <section class="project-title" id="head">
+        <h1>Web Based Face deduction, age, gender, and race deduction</h1>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="slider-container">
+        <div class="slider">
+            <img src="img/the-care-page.png" alt="Image 1">
+            <img src="Img/Face_Deduction/Picture7.png" alt="Image 2">
+            <img src="img/Face_Deduction/Picture6.png" alt="Image 3">
+            <img src="img/Face_Deduction/Picture5.png" alt="Image 4">
+            <img src="img/Face_Deduction/Picure4.png" alt="Image 5">
+           
+
+        </div>
+    </section>
+
+    <!-- Project Description -->
+    <section class="description">
+        <h2>Description:</h2>
+        <p>
+            Every general made website will be having 3 sections to deal with one of this sections will always be the medal point between the other sections, this section called the Back-End code, where we can consider it the brain of some guy. The other 2 sections are the Front-End and the Database setup. The backed end server will control both of those 2 to get the best output or needs from this software. 
+            Its all starting from the front-end witch It’s the user interface where the user can key in or get his information, it works like a face of a person. Once the user access the website the front end will send a request to the back end to open the camera, once the request is made the frond end will take the video capetured and past it in the medal of the screen :
+
+            This is the page that the user should see once he open the project then all what will be available for the user is Deduct All bottom. The work of this bottom is to take a screenshot and send it to the back end server I the form of a post request:
+            the screen shot will be sent to the backend server in the form of jpeg image then the back end server will fairest copy the image have been sent from the front end into tow images, one without any prosses to the database then one the back end will handle it to process it and to get the deductions needed, Here the front end will part is finished.
+now comes to the Back-End part of the operation, once copying the picture into 2 and send one to the database the one picture left will be getting ready to be process by the AI models. The AI models have been separated for each one of them to operate and generate first then then go to the other one. There is 4 AI deduction models in the project:
+        </p>
+        <p>
+1. Face deduction model: 
+          this model have to be the first one in the queue because all the other need the face deduction to send them data about the face so they can start to operate and here is how the model is working.
+once it get the picture that need to be processed it will search for the human eyes, because is one of the easiest features to deduct. then it will try to detect facial landmarks, such as eyebrows, mouth, nose, nostrils and irises. Once the algorithm concludes that it has found a facial region, it does additional tests to confirm that it has detected a face.
+There are deferent methods to train the program to deduct faces the one that have been used in the project is the: Feature-based or feature-invariant: This method uses features such as a person's eyes or nose to detect a face. They can be negatively affected by noise and light. the face will be deducted then the python code will do a box shape line around the face to show that it has been deducted. 
+</p>
+<p>
+2. Gender and age deduction model: 
+UTKFace dataset is a large-scale face dataset with long age span (range from 0 to 116 years old). The dataset consists of over 20,000 face images with annotations of age, gender, and ethnicity. The images cover large variation in pose, facial expression, illumination, occlusion, resolution, etc. This dataset could be used on a variety of tasks, e.g., face detection, age estimation, age progression/regression, landmark localization, etc.  the issue with this data set that it need the face to be supper clear in the frame so that it can give a correct answer, if the face is in a side or it deducted in a video where the face is moving you will find that the age and gender is changing based on the movement of the face. That means it can not give a correct answer all the time.
+The data set for the age and gender also focuses in the wrinkles of the face where it can read the older people by there wrinkles of the face and the teenagers by the shape of there faces while it will deduct the babies by the roundness of there faces. 
+The less that the ai sees wrinkles the less the age that it will deduct. Not like the gender deduction where the gender deduction will start with palate where In the female the palate will be smaller than the palate in the males same goes for the forehead where the males usually have a squared shaped forehead while the girls will have it more to rounded.
+</p>
+<p>
+4. race deduction model. 
+As a data set for this model I have used deepface library to deduct the race of the target. Where deepface race deduction model actually CNN models and they expect standard sized inputs. So, resizing is required before representation. To avoid deformation, deepface adds black padding pixels according to the target size argument after detection and alignment.
+
+        </p>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="heading">Gained <span>Skills</span></h2>
+        <div class="skills-container">
+<div class="skills-box">
+    <i class='bx bxl-html5'></i>
+    <h3>HTML, CSS/SCSS, JavaScript</h3>
+    <p>Where the website is fully writen using this programming languages and made to be easy and efficient</p>
+ 
+</div>
+<div class="skills-box">
+    <i class='bx bxl-css3'></i>
+    <h3>Data analitics</h3>
+    <p>Where the library was designd to recognize only spicific items i need to improve and ollect data about the hijab to make it aple to recognize the hijab for girls</p>
+ 
+</div>
+<div class="skills-box">
+    <i class='bx bxl-css3'></i>
+    <h3>flask</h3>
+    <p>to link the hardware with the website i needed to use api</p>
+  
+</div>
+<div class="skills-box">
+    <i class='bx bxl-css3'></i>
+    <h3>Python</h3>
+    <p>Is the programming language used for the packend </p>
+  
+</div>
+</div>
+</section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>This Web has been made by <span>imam mohammed</span> and its one of his projects</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#head"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+       </footer>
+
+</body>
+</html>

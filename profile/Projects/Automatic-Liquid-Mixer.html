@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" >
+        <a href="/main.html" class="logo">IMAM MOHAMMED ELIMAM AHAMED.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="/main.html#home" >Home</a>
+            <a href="/main.html#about">About</a>
+            <a href="/main.html#skills">Skills</a>
+            <a href="/main.html#project"class="active">Projects</a>
+        </nav>
+    </header>
+
+    <!-- Project Title -->
+    <section class="project-title" id="head">
+        <h1>Automatic Liquid Mixer</h1>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="slider-container">
+        <div class="slider">
+            <img src="img/Automatic_mixer/Picture1.jpg" alt="Image 1">
+            <img src="img/Automatic_mixer/Picture2.png" alt="Image 2">
+            <img src="img/Automatic_mixer/Picture3.jpg" alt="Image 3">
+            <img src="img/Automatic_mixer/Picture4.jpg" alt="Image 4">
+           
+           
+
+        </div>
+    </section>
+
+    <!-- Project Description -->
+    <section class="description">
+        <h2>Description:</h2>
+        <p>
+            The automated liquid mixer is a completely innovative system created to revolutionize the process
+            of preparing tailor-made liquid blends. It uses Bluetooth/Wi-Fi to communicate with very precise
+            mechanical operations rather than traditional screens or physical buttons. Orders are only sent from
+            a mobile app or website for user convenience.
+            
+        </p>
+        <p>
+            After receiving the order from the liquid mix made via Bluetooth or Wi-Fi, it then sends this
+            information over a wired connection to the Arduino Uno through a communication module. This
+            signal flow is said to come from the TX pin of the module to the RX pin of the Arduino. And once the
+            order comes in, it processes instructions that begin by checking the base. The base, a 20x10 cm
+            platform, is 3D-printed, and such a base is where the cup is placed. A contact switch connected to
+            pin 2 of the Arduino informs whether the contact switch had been placed correctly. If the base is not
+            put in place correctly, Arduino moves the stepper motor that moves the base backward until it
+            touches the contact switch. This ensures that the base is aligned properly and gets ready to move to
+            the pump's dispensing position.
+        </p>
+        <p>
+            The automated liquid mixer is a completely innovative system created to revolutionize the process
+            of preparing tailor-made liquid blends. It uses Bluetooth/Wi-Fi to communicate with very precise
+            mechanical operations rather than traditional screens or physical buttons. Orders are only sent from
+            a mobile app or website for user convenience.
+            After receiving the order from the liquid mix made via Bluetooth or Wi-Fi, it then sends this
+            information over a wired connection to the Arduino Uno through a communication module. This
+            signal flow is said to come from the TX pin of the module to the RX pin of the Arduino. And once the
+            order comes in, it processes instructions that begin by checking the base. The base, a 20x10 cm
+            platform, is 3D-printed, and such a base is where the cup is placed. A contact switch connected to
+            pin 2 of the Arduino informs whether the contact switch had been placed correctly. If the base is not
+            put in place correctly, Arduino moves the stepper motor that moves the base backward until it
+            touches the contact switch. This ensures that the base is aligned properly and gets ready to move to
+            the pump's dispensing position.
+        </p>
+        <p>
+            
+            The stepper motor is actuated by a stepper driver to move the base to the pump corresponding to
+            any given order. It has its inputs connected from the Arduino to the stepper driver for step and
+            direction signals using pins 3 and 4, while power to the driver is provided directly from an adapter.
+            When the base reaches its appointed pump, the relay activates from the Arduino, which energizes
+            the pump to pump the liquid into the cup. Each pump is installed vertically on a wooden frame and
+            connected to two pipes: one liquid intake and another for dispensing into the cup. This is done for all
+            necessary liquids in the mix, moving the base according to the programmed position of each pump.
+            Once all liquids are dispensed, the base is returned to the home position. The stepper motor runs it
+            backwards until it again touches the contact switch. Once again, the Arduino sends signal (code
+            1010) to the mobile app or website, notifying that the mix of liquids is ready for picking up.
+            Wi-Fi and Bluetooth are the ordering modes available in the system. This versatility will further allow
+            a seamless connection of the user's device with the mixer. It is a very unique feature that completely
+            replaces age-old ordering means with modern wireless ordering system from conventional ones
+            embedded in some designs.
+        </p>
+        <p>
+            The basic design now comes equipped with features for the smooth and highly precise movement. It
+            slides along two steel rods with the use of shifter and timing belts, with the stepper motor providing
+            the motive power for motion control. The rods are held in place by 3D-printed holders with that on
+            the right serving as the starting point. The pumps and electronics related to them which include the
+            Arduino, communication module, stepper driver, and power adapter are arranged just by the side of
+            the stepper motor for a neat wiring and operation.
+        </p>
+        <p>
+            In fact, the automated liquid mixer provides an extremely efficient mode of modernizing the way
+            liquid mixes are prepared. Merging high-end modern communication technologies with highly
+            precise mechanical systems, this then results in operations that are very seamless, accurate, and
+            friendly to the user while significantly abating some of the otherwise high manual workloads that
+            such preparations would normally require.
+        </p>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="heading">Gained <span>Skills</span></h2>
+        <div class="skills-container">
+<div class="skills-box">
+    <i class='bx bxl-html5'></i>
+    <h3>HTML, CSS/SCSS & JavaScript</h3>
+    <p>Where the website is fully writen using this programming languages and made to be easy and efficient.</p>
+ 
+</div>
+<div class="skills-box">
+    <i class='bx bxl-css3'></i>
+    <h3>C/C++/C#</h3>
+    <p>All the Hardware componnents are programmed using C/C++/C# witch making me profetional in this programming languages.</p>
+ 
+</div>
+<div class="skills-box">
+    <i class='bx bxl-css3'></i>
+    <h3>flask</h3>
+    <p>to link the hardware with the website i needed to use api key what made me learn how api works and what i need to use it.</p>
+  
+</div>
+</div>
+</section>
+
+    </seaction>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>This Web has been made by <span>imam mohammed</span> and its one of his projects</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#head"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+       </footer>
+
+</body>
+</html>
