@@ -68,7 +68,7 @@
         .navbar a {
             font-size: 1.6rem;
             color: var(--text-secondary);
-            margin-left: 4rem;
+            margin-left: 2.8rem;
             transition: all 0.3s;
             position: relative;
         }
@@ -477,6 +477,73 @@
             color: var(--accent-primary);
         }
 
+        /* Awards & Certifications Sections */
+        .awards {
+            padding: 10rem 9% 2rem;
+            background: var(--bg-primary);
+        }
+
+        .certifications {
+            padding: 10rem 9% 2rem;
+            background: var(--bg-secondary);
+        }
+
+        .achievement-grid,
+        .certification-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 5rem;
+        }
+
+        .achievement-card,
+        .certification-card {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .achievement-card:hover,
+        .certification-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 15px 40px rgba(0, 217, 255, 0.2);
+        }
+
+        .achievement-card i,
+        .certification-card i {
+            font-size: 4.5rem;
+            color: var(--accent-primary);
+            margin-bottom: 2rem;
+        }
+
+        .achievement-card h3,
+        .certification-card h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .achievement-card .date,
+        .certification-card .issuer {
+            font-size: 1.4rem;
+            color: var(--accent-primary);
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: rgba(0, 217, 255, 0.1);
+            border-radius: 20px;
+        }
+
+        .achievement-card p,
+        .certification-card p {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
         /* Footer */
         .footer {
             background: var(--bg-secondary);
@@ -534,6 +601,8 @@
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
+            <a href="#awards">Awards</a>
+            <a href="#certifications">Certificates</a>
             <a href="#projects">Projects</a>
         </nav>
     </header>
@@ -542,8 +611,8 @@
         <div class="home-content">
             <h3>Hello, I'm</h3>
             <h1>Imam Mohammed</h1>
-            <p class="role">Full Stack Developer & Software Engineer</p>
-            <p>A motivated Computer Engineering student specializing in Full Stack Development with expertise in Java, JavaScript, Python, and modern frameworks. Passionate about building innovative solutions and delivering high-quality software.</p>
+            <p class="role">Full Stack Software Engineer, AI Developer & Robotics Builder</p>
+            <p>Computer Engineering student and software developer experienced in building full-stack web applications, RESTful APIs, AI-powered computer vision systems, automation projects, and robotics solutions. My work combines React, Node.js, Python, databases, testing, and embedded systems to turn practical ideas into reliable software and intelligent tools.</p>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/imam-ahamed-035020271"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/imam1919"><i class='bx bxl-github'></i></a>
@@ -563,10 +632,11 @@
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Computer Engineering Student & Developer</h3>
-            <p>A highly motivated Computer Engineering student with a strong foundation in programming languages such as Java, JavaScript, Python, and C++. Currently pursuing my Bachelor's degree at MILA University with a CGPA of 3.3/4.0.</p>
-            <p>I have hands-on experience in full-stack development, software testing, and quality assurance through multiple internships and freelance projects. My expertise includes building scalable web applications, implementing RESTful APIs, managing databases, and leading development teams.</p>
-            <p>Recognized with Dean's List awards and a Golden Award in project exhibition, I'm committed to continuous learning and delivering exceptional results in every project I undertake.</p>
+            <h3>Computer Engineering Student, Full Stack Developer & AI Enthusiast</h3>
+            <p>I am pursuing a Bachelor's degree in Computer Engineering at MILA University with a CGPA of 3.3/4.0, supported by a strong foundation in Java, Python, JavaScript, TypeScript, C++, PHP, Go, HTML, and CSS. My technical background covers full-stack development, database management, RESTful APIs, software testing, cybersecurity, AI, machine learning, and computer vision.</p>
+            <p>Professionally, I have worked across freelance, internship, and part-time roles as a software developer, full-stack developer, and QA/software testing engineer. I have led a team of developers, designed UI/UX prototypes in Figma, built React and Node.js applications, developed Python backend services, managed MySQL databases, worked with CI/CD pipelines, and tested systems through hundreds of documented test cases.</p>
+            <p>My projects reflect both software and engineering depth, including a car search application, AI-powered CCTV security system, AI face recognition system, automatic drink mixer, restaurant management system, autonomous car driver, and AI-driven autonomous robot. Across these projects, I focus on practical problem solving, clean implementation, automation, and useful AI-driven experiences.</p>
+            <p>I have been recognized with Dean's List awards, a Golden Award at a projects exhibition, and second place in a Python coding competition. I also hold training in ethical hacking and penetration testing, along with AI workshop experience focused on prompting, AI-assisted coding, and implementing AI in real projects.</p>
         </div>
     </section>
 
@@ -664,6 +734,48 @@
         </div>
     </section>
 
+    <section class="awards" id="awards">
+        <h2 class="heading">Awards & <span>Achievements</span></h2>
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <i class='bx bxs-award'></i>
+                <h3>Dean's List Award</h3>
+                <span class="date">March & July 2024</span>
+                <p>Recognized for strong academic performance during the Computer Engineering program at MILA University.</p>
+            </div>
+            <div class="achievement-card">
+                <i class='bx bxs-trophy'></i>
+                <h3>Golden Award</h3>
+                <span class="date">Projects Exhibition, 2024</span>
+                <p>Awarded for project excellence and presentation during the university projects exhibition.</p>
+            </div>
+            <div class="achievement-card">
+                <i class='bx bx-code-curly'></i>
+                <h3>Second Place</h3>
+                <span class="date">Python Coding Competition</span>
+                <p>Earned second place in a Python programming competition, demonstrating problem-solving and coding ability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications" id="certifications">
+        <h2 class="heading">Professional <span>Certificates</span></h2>
+        <div class="certification-grid">
+            <div class="certification-card">
+                <i class='bx bx-shield-quarter'></i>
+                <h3>Full Ethical Hacking & Penetration Testing Course</h3>
+                <span class="issuer">Udemy | March 2023 - June 2023</span>
+                <p>Covered ethical intelligence, Linux administration, web shell security, database security, SSL/TLS protocols, HTTPS implementation, and secure API development.</p>
+            </div>
+            <div class="certification-card">
+                <i class='bx bx-brain'></i>
+                <h3>AI For Good Workshop</h3>
+                <span class="issuer">AI Singapore | March 2025</span>
+                <p>Focused on prompting skills, AI for coding, and practical ways to implement AI while developing a project.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="projects" id="projects">
         <h2 class="heading">Featured <span>Projects</span></h2>
         <div class="project-grid">
@@ -748,6 +860,21 @@
                     <a href="Projects/Automatic-Car-Driver.html" class="btn">In Development</a>
                 </div>
             </div>
+            <div class="project-card">
+                <img src="Projects/Img/Ai_Drivin_Robot/robot-main.jpg" alt="AI Driven Autonomous Robot" class="project-img">
+                <div class="project-info">
+                    <h3>AI-Driven Autonomous Robot</h3>
+                    <p>An AI-controlled mobile robot that follows a target, carries items, and avoids obstacles in real time using computer vision and sensor fusion.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">TensorFlow Lite</span>
+                        <span class="tech-tag">LiDAR</span>
+                        <span class="tech-tag">Robotics</span>
+                    </div>
+                    <a href="Projects/AI-Driven-Autonomous-Robot.html" class="btn">View Project</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -798,7 +925,7 @@
         });
 
         ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-        ScrollReveal().reveal('.home-img, .skill-card, .project-card', { origin: 'bottom' });
+        ScrollReveal().reveal('.home-img, .skill-card, .achievement-card, .certification-card, .project-card', { origin: 'bottom' });
         ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
         ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
     </script>
